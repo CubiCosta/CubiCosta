@@ -88,11 +88,11 @@ function showProperty(eigenschaft, backPage) {
 
     content.innerHTML = `
 
+        <h1>${eigenschaft.name}</h1>
+
         <button onclick="showPage('${backPage}')">
             ← Zurück
         </button>
-
-        <h1>${eigenschaft.name}</h1>
 
         <p>
             <strong>Benötigte Arbeitszeit:</strong><br>
