@@ -1,0 +1,14 @@
+Website mit Suchfunktion nach Baureihe
+  - 420
+  - 423
+  - 424
+  - 1420 (coming soon)
+
+Liste für Drehmomente und Zeiten für die Arbeiten
+  - Erstmal von mir Vordifiniert
+  - Später selber einreichbar
+  - Vielleicht mit Bilder 
+
+Liste mit Musterprotokollen 
+  - angeheftet an Baureihe oder Arbeit als Bild
+  - Checkliste zum abhaken 420 zb? 
