@@ -8,7 +8,7 @@ const Info423 = [
     {
         name: "Lagerdeckel",
         text: "Dämpfer = 90Nm<br>Deckel = 100Nm<br>Innen (Impulsscheibe) = 180Nm<br>Raderderdeckel = 25Nm<br>Erdung = 85Nm",
-        zeit: "Deckel Abbau 20min<br>RS Prüfung Deckel 15min<br>RS wartung 20min<br>Deckel Anbau"
+        zeit: "Deckel Abbau 20min<br>RS Prüfung Deckel 15min<br>RS wartung 20min<br>Deckel Anbau 40min"
     },
 
     {
