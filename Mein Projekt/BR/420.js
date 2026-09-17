@@ -1,8 +1,0 @@
-const Info420 = [
-    {
-        name: "Leer",
-        text: "Hier könnte was stehen",
-        zeit: "Dauert noch"
-    }
-    
-]
