@@ -86,22 +86,35 @@ function showProperty(eigenschaft, backPage) {
 
     const content = document.getElementById("content");
 
-    content.innerHTML = `
+    function createRows(rows) {
+        return rows.map(zeile => `
+            <div class="property-label">
+                ${zeile[0]}
+            </div>
 
+            <div class="property-value">
+                ${zeile[1]}
+            </div>
+        `).join("");
+    }
+
+    content.innerHTML = `
         <h1>${eigenschaft.name}</h1>
 
         <button onclick="showPage('${backPage}')">
             ← Zurück
         </button>
 
-        <p>
-            <strong>Benötigte Arbeitszeit:</strong><br>
-            ${eigenschaft.zeit}
-        </p>
+        <h3>Benötigte Arbeitszeit:</h3>
 
-        <p>
-            <strong>Beschreibung:</strong><br>
-            ${eigenschaft.text}
-        </p>
+        <div class="property-table">
+            ${createRows(eigenschaft.zeit)}
+        </div>
+
+        <h3>Beschreibung:</h3>
+
+        <div class="property-table">
+            ${createRows(eigenschaft.text)}
+        </div>
     `;
 }

@@ -41,7 +41,7 @@ main {
 
 p {
     margin-left: 10px;
-    font_size: 20px;
+    font-size: 20px;
 }
 
 h1 {
@@ -67,6 +67,25 @@ footer {
     font-size: 14px;
     color: #eee;
     background-color: rgba(39, 39, 39, 0.7);
+}
+
+.property-table {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    width: 100%;
+    align-items: start;
+}
+
+.property-label {
+    padding: 2px 15px 2px 0;
+}
+
+.property-value {
+    padding: 2px 0 2px 15px;
+}
+
+.property-label, .property-value {
+    line-height: 1.2;
 }
 
 .content-header {
