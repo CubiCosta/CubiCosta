@@ -11,6 +11,9 @@ const Info420 = [
         ],
         zeit: [
             ["Lagerdeckel...", "0min"]
+        ],
+        bilder: [
+            
         ]
     }
     

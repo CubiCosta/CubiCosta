@@ -81,6 +81,28 @@ function createPropertyButtons(properties, backPage) {
         });
     }
 
+function openImage(src) {
+    const overlay = document.createElement("div");
+
+    overlay.className = "image-overlay";
+
+    overlay.innerHTML = `
+        <img src="${src}" alt="Vergrößertes Bild">
+        <button class="close-image">✕</button>
+    `;
+
+    document.body.appendChild(overlay);
+
+    overlay.querySelector(".close-image").onclick = function(event) {
+        event.stopPropagation();
+        overlay.remove();
+    };
+
+    overlay.onclick = function() {
+        overlay.remove();
+    };
+}
+
 
 function showProperty(eigenschaft, backPage) {
 
@@ -116,5 +138,19 @@ function showProperty(eigenschaft, backPage) {
         <div class="property-table">
             ${createRows(eigenschaft.text)}
         </div>
+
+        <h3>Protokolle & Checklisten:
+
+        ${eigenschaft.bilder ? `
+    <div class="property-images">
+        ${eigenschaft.bilder.map(bild => `
+            <img
+                src="${bild}"
+                alt="${eigenschaft.name}"
+                onclick="openImage('${bild}')"
+            >
+        `).join("")}
+    </div>
+` : ""}
     `;
 }

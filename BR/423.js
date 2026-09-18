@@ -8,6 +8,9 @@ const Info423 = [
         zeit: [
             ["Ölwechsel pro Getriebe", "ca 60min"],
             ["mit Fasswechsel", "einmalig +30min"]
+        ],
+        bilder: [
+            
         ]
     },
 
@@ -26,6 +29,9 @@ const Info423 = [
             ["RS wartung", "20min"],
             ["Deckel Anbau", "40min"]
         ],
+        bilder: [
+            
+        ]
     },
 
     {
@@ -35,6 +41,9 @@ const Info423 = [
         ],
         zeit: [
             ["Vorgegeben", "264min"]
+        ],
+        bilder: [
+            
         ]
     }
 

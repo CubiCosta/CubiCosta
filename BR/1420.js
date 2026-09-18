@@ -6,6 +6,9 @@ const Info1420 = [
         ],
         zeit: [
             ["Dauert noch", "und noch mehr"]
+        ],
+        bilder: [
+            
         ]
     }
     

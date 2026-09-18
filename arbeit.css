@@ -61,7 +61,6 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-
     text-align: left;
     padding: 10px;
     font-size: 14px;
@@ -91,10 +90,52 @@ footer {
 .content-header {
     width: 100%;
     min-height: 60px;
-
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: start;
+}
+
+.property-images {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.property-images img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.image-overlay img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+}
+
+.close-image {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 #propertyButtons {
