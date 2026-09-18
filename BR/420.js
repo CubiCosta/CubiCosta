@@ -1,11 +1,16 @@
 const Info420 = [
     {
-        name: "Leer",
+        name: "Lagerdeckel",
         text: [
-            ["Hier könnte was stehen", "und Hier auch"]
+            ["Wegimpulsgeber PZB", "30Nm"],
+            ["Wegimpulsgeber LZB", "151Nm"],
+            ["Ferngeber", "20Nm"],
+            ["Lagerdeckel", "100Nm"],
+            ["Schleifring", "28Nm"],
+            ["Schutzhaube", "35Nm"]
         ],
         zeit: [
-            ["Dauert noch", "und noch mehr"]
+            ["Lagerdeckel...", "0min"]
         ]
     }
     
