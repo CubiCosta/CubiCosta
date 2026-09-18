@@ -53,13 +53,43 @@ function showPage(page) {
 
         createPropertyButtons(Info1420, "1420");
     }
+
+    else if (page === "links") {
+
+        content.innerHTML = `
+            <h1>Nützliche links</h1>
+
+            <p>Hier ist eine Sammlung Nützlicher Links</p>
+            <p>Nutzung der meisten Links nur mit dem Arbeitsgerät und<br>einem Aktiven schlüssel möglich.</p>
+
+            <div id="propertyButtons"></div>
+        `;
+
+        createPropertyLinkButtons(link);
+    }
 }
 
-
-// Beim Start die Startseite anzeigen
 showPage("home");
 
 
+function createPropertyLinkButtons(properties) {
+
+    const container = document.getElementById("propertyButtons");
+    container.innerHTML = "";
+
+    properties.forEach(eigenschaft => {
+
+        const button = document.createElement("button");
+
+        button.textContent = eigenschaft.name_url;
+
+        button.onclick = function () {
+            window.open(eigenschaft.url, "_blank");
+        };
+
+        container.appendChild(button);
+    });
+}
 
 function createPropertyButtons(properties, backPage) {
 
@@ -102,7 +132,6 @@ function openImage(src) {
         overlay.remove();
     };
 }
-
 
 function showProperty(eigenschaft, backPage) {
 
