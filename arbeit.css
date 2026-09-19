@@ -50,6 +50,11 @@ h1 {
     font-size: 45px;
 }
 
+h2 {
+    margin-left: 10px;
+    font-size: 30px;
+}
+
 input {
     display: block;
     margin: 10px 0;
