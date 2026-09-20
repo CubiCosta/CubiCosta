@@ -60,7 +60,7 @@ function showPage(page) {
             <h1>Nützliche links</h1>
 
             <p>Hier ist eine Sammlung Nützlicher Links</p>
-            <p>Nutzung der meisten Links nur mit dem Arbeitsgerät und<br>einem Aktiven schlüssel möglich.</p>
+            <p>Nutzung der meisten Links nur mit dem Arbeitsgerät und einem Aktiven schlüssel möglich.</p>
 
             <div id="propertyButtons"></div>
         `;
