@@ -1,2 +1,2 @@
 const GleisePDF = "img/gleise.pdf";
-const GleisePNG = "ing/Gleis.jpg"
+const GleisePNG = "img/Gleis.jpg"
