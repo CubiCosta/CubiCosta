@@ -75,6 +75,7 @@ function showPage(page) {
                 class="property-single-image"
                 src="${GleisePNG}"
                 alt="Gleis"
+                onclick="showPDF()"
             >
         `;
     }
