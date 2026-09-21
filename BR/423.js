@@ -63,7 +63,7 @@ const Info423 = [
             ["GSM-R Klein IS 39N", "87 min"]
         ],
         bilder: [
-            
+            "img/GSMR.jpg"
         ]
     }
 
