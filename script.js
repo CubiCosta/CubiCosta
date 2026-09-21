@@ -71,14 +71,20 @@ function showPage(page) {
     else if (page === "gleis") {
 
         content.innerHTML = `
-            <img class="property-images" class="image" src="img/Gleis.jpg"></img>
+            <img
+                src="${bild}"
+                alt="${eigenschaft.name}"
+                onclick="openImage('${bild}')"
+            >
         `;
 
-        createPropertyLinkButtons(gleis);
+        createPropertyLinkButtons(gleis, "bilder");
     }
 }
 
 showPage("home");
+
+funktion 
 
 
 function createPropertyLinkButtons(properties) {

@@ -148,6 +148,12 @@ footer {
     cursor: pointer;
 }
 
+.image {
+
+    max-width: 200px;
+    
+}
+
 #propertyButtons {
     display: flex;
     justify-content: center;
