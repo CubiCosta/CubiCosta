@@ -71,10 +71,10 @@ function showPage(page) {
     else if (page === "gleis") {
 
         content.innerHTML = `
-            <a href="${GleisPDF}">
+            <a href="${GleisePDF}">
                 <img
                     class="property-single-image"
-                    src="${GleisPNG}"
+                    src="${GleisePNG}"
                     alt="Gleis"
                 >
             </a>
