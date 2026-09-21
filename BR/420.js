@@ -13,7 +13,7 @@ const Info420 = [
             ["Lagerdeckel...", "0min"]
         ],
         bilder: [
-            
+            "img/deckel420.jpg"
         ]
     },
     {
