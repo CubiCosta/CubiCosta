@@ -1,13 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     min-height: 100dvh;
+}
 
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    
     background-image: url(img/Background_main.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+
+    z-index: -1;
 }
 
 nav {
