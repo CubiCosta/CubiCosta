@@ -72,10 +72,9 @@ function showPage(page) {
 
         content.innerHTML = `
             <img
-                class="property-single-image"
-                src"${GleisePNG}"
+                src="img/Gleis.png"
                 alt="Gleis"
-                onclick="showPDF()"
+                style="width: 300px;"
             >
         `;
     }
