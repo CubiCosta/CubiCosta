@@ -67,6 +67,15 @@ function showPage(page) {
 
         createPropertyLinkButtons(link);
     }
+
+    else if (page === "gleis") {
+
+        content.innerHTML = `
+            <img src="img/gleis.jpg"></img>
+        `;
+
+        createPropertyLinkButtons(gleis);
+    }
 }
 
 showPage("home");
