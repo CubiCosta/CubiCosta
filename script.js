@@ -71,36 +71,18 @@ function showPage(page) {
     else if (page === "gleis") {
 
         content.innerHTML = `
-            <div class="pdf-preview" onclick="openPDF('${Gleise}')">
-                <iframe
-                    src="${Gleise}"
-                    title="PDF Vorschau">
-                </iframe>
-            </div>
+            <a href="${GleisPDF}">
+                <img
+                    class="property-single-image"
+                    src="${GleisBild}"
+                    alt="Gleis"
+                >
+            </a>
         `;
     }
 }
 
 showPage("home");
-
-function openPDF(src) {
-
-    const overlay = document.createElement("div");
-
-    overlay.className = "pdf-overlay";
-
-    overlay.innerHTML = `
-        <iframe src="${src}"></iframe>
-        <button class="close-pdf">✕</button>
-    `;
-
-    document.body.appendChild(overlay);
-
-    overlay.querySelector(".close-pdf").onclick = function(event) {
-        event.stopPropagation();
-        overlay.remove();
-    };
-}
 
 
 function createPropertyLinkButtons(properties) {
