@@ -1,1 +1,1 @@
-name = "img/Gleis.jpg"
+const Gleise = "img/Gleis.jpg";

@@ -72,13 +72,11 @@ function showPage(page) {
 
         content.innerHTML = `
             <img
-                src="${bild}"
-                alt="${eigenschaft.name}"
-                onclick="openImage('${bild}')"
+                src="${Gleise}"
+                alt="Gleis"
+                onclick="openImage('${Gleise}')"
             >
         `;
-
-        createPropertyLinkButtons(gleis, "bilder");
     }
 }
 
@@ -168,7 +166,7 @@ function showProperty(eigenschaft, backPage) {
         <h1>${eigenschaft.name}</h1>
 
         <button onclick="showPage('${backPage}')">
-            ← Zurück
+            ⇐ Zurück
         </button>
 
         <h3>Benötigte Arbeitszeit:</h3>
