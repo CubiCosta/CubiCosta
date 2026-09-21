@@ -75,7 +75,7 @@ function showPage(page) {
                 class="property-single-image"
                 src="${GleisePNG}"
                 alt="Gleis"
-                onclick="showPDF()"
+                onclick="window.open('${GleisePDF}', '_blank')"
             >
         `;
     }
@@ -83,14 +83,6 @@ function showPage(page) {
 
 showPage("home");
 
-function showPDF() {
-    content.innerHTML = `
-        <iframe
-            src="${GleisePDF}"
-            class="pdf-viewer"
-        ></iframe>
-    `;
-}
 
 function createPropertyLinkButtons(properties) {
 
