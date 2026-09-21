@@ -83,7 +83,7 @@ function showPage(page) {
 
 showPage("home");
 
-funktion showPDF() {
+function showPDF() {
     content.innerHTML = `
         <iframe
             src="${GleisePDF}"
