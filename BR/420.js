@@ -25,11 +25,11 @@ const Info420 = [
             ["siehe bild",""]
             ],
         bilder: [
-            "img/420IS200.png", 
-            "img/420IS510.png",
-            "img/420IS520.png",
-            "img/420IS530.png",
-            "img/420IS540.png"
+            "img/420IS200.jpg", 
+            "img/420IS510.jpg",
+            "img/420IS520.jpg",
+            "img/420IS530.jpg",
+            "img/420IS540.jpg"
             ]
     }
     
