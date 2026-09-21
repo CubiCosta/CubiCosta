@@ -72,6 +72,7 @@ function showPage(page) {
 
         content.innerHTML = `
             <img
+                class="property-single-image"
                 src="${Gleise}"
                 alt="Gleis"
                 onclick="openImage('${Gleise}')"
