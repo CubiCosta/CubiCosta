@@ -74,7 +74,7 @@ function showPage(page) {
             <a href="${GleisPDF}">
                 <img
                     class="property-single-image"
-                    src="${GleisBild}"
+                    src="${GleisPNG}"
                     alt="Gleis"
                 >
             </a>
