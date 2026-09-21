@@ -71,19 +71,26 @@ function showPage(page) {
     else if (page === "gleis") {
 
         content.innerHTML = `
-            <a href="${GleisePDF}">
-                <img
-                    class="property-single-image"
-                    src="${GleisePNG}"
-                    alt="Gleis"
-                >
-            </a>
+            <img
+                class="property-single-image"
+                src"${GleisePNG}"
+                alt="Gleis"
+                onclick="showPDF()"
+            >
         `;
     }
 }
 
 showPage("home");
 
+funktion showPDF() {
+    content.innerHTML = `
+        <iframe
+            src="${GleisePDF}"
+            class="pdf-viewer"
+        ></iframe>
+    `;
+}
 
 function createPropertyLinkButtons(properties) {
 

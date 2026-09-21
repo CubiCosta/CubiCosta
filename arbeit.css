@@ -162,6 +162,13 @@ footer {
     cursor: pointer;
 }
 
+.pdf-viewer {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    display: block;
+}
+
 #propertyButtons {
     display: flex;
     justify-content: center;
