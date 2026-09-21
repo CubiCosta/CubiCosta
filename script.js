@@ -71,7 +71,7 @@ function showPage(page) {
     else if (page === "gleis") {
 
         content.innerHTML = `
-            <img src="img/Gleis.jpg"></img>
+            <img class="property-images" src="img/Gleis.jpg"></img>
         `;
 
         createPropertyLinkButtons(gleis);
