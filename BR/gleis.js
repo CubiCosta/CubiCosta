@@ -1,1 +1,1 @@
-const Gleise = "img/Gleis.jpg";
+const Gleise = "img/gleise.pdf";
