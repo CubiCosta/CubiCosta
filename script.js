@@ -72,9 +72,9 @@ function showPage(page) {
 
         content.innerHTML = `
             <img
-                src="img/Gleis.jpg"
+                class="property-single-image"
+                src="${GleisBild}"
                 alt="Gleis"
-                style="width: 300px;"
             >
         `;
     }
