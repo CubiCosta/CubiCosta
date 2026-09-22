@@ -182,16 +182,21 @@ function showProperty(eigenschaft, backPage) {
 
         <h3>Protokolle & Checklisten:
 
-        ${eigenschaft.bilder ? `
-    <div class="property-images">
-        ${eigenschaft.bilder.map(bild => `
-            <img
-                src="${bild}"
-                alt="${eigenschaft.name}"
-                onclick="openImage('${bild}')"
-            >
-        `).join("")}
-    </div>
-` : ""}
+        ${eigenschaft.bilder && eigenschaft.bilder.length > 0 ? `
+        <h3 class="image-toggle" onclick="toggleImages()">
+            Protokolle & Checklisten
+            <span id="image-arrow">▼</span>
+        </h3>
+
+        <div id="property-images" class="property-images hidden">
+            ${eigenschaft.bilder.map(bild => `
+                <img
+                    src="${bild}"
+                    alt="${eigenschaft.name}"
+                    onclick="openImage('${bild}')"
+                >
+            `).join("")}
+        </div>
+    ` : ""}
     `;
 }
