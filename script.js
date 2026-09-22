@@ -194,8 +194,6 @@ function showProperty(eigenschaft, backPage) {
             ${createRows(eigenschaft.text)}
         </div>
 
-        <h3>Protokolle & Checklisten:
-
         ${eigenschaft.bilder && eigenschaft.bilder.length > 0 ? `
         <h3 class="image-toggle" onclick="toggleImages()">
             Protokolle & Checklisten
