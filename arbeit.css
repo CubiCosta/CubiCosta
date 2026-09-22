@@ -3,7 +3,7 @@ body::before {
     position: fixed;
     inset: 0;
 
-    height: 100svh;
+    height: calc(100svh+30px);
 
     background-image: url(img/Background_main.png);
     background-size: cover;
