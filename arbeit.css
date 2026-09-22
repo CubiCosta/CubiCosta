@@ -164,7 +164,7 @@ footer {
     height: 80vh;
     border: none;
     display: block;
-}
+    }
 
 #propertyButtons {
     display: flex;
@@ -192,6 +192,14 @@ footer {
     button {
         border-radius: 5px;
         border: 1px solid black;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
     }
 
 }
