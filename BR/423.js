@@ -50,7 +50,7 @@ const Info423 = [
 
         ],
         bilder: [
-            "img/LPgroß.jpg", "img/LPklein.jpg"
+            "img/LPklein.jpg", "img/LPgroß.jpg"
         ]
     },
 
