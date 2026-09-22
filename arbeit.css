@@ -150,6 +150,15 @@ footer {
 
 }
 
+.image-toggle {
+    cursor: pointer;
+    user-select: none;
+}
+
+.property-images.hidden {
+    display: none;
+}
+
 .property-single-image {
     width: 300px;
     max-width: 100%;
