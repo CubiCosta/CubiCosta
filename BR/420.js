@@ -10,7 +10,7 @@ const Info420 = [
             ["Schutzhaube", "35Nm"],
             ["Grundplatte Erdung", "54Nm"],
             ["Polrad", "75+10Nm"],
-            ["SAP plus Drehmoment", "Kontrolle Bild Unten"
+            ["SAP plus Drehmoment", "Kontrolle Bild Unten"]
         ],
         zeit: [
             ["Lagerdeckel usw.", "unbekannt"]
