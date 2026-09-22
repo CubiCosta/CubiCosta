@@ -145,6 +145,20 @@ function openImage(src) {
     };
 }
 
+function toggleImages() {
+
+    const images = document.getElementById("property-images");
+    const arrow = document.getElementById("image-arrow");
+
+    images.classList.toggle("hidden");
+
+    if (images.classList.contains("hidden")) {
+        arrow.textContent = "▼";
+    } else {
+        arrow.textContent = "▲";
+    }
+}
+
 function showProperty(eigenschaft, backPage) {
 
     const content = document.getElementById("content");
