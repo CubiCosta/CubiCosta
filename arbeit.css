@@ -24,7 +24,8 @@ nav {
 button {
     cursor: pointer;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 nav button {
