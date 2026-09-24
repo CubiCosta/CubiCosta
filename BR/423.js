@@ -66,6 +66,24 @@ const Info423 = [
             "img/GSMR.jpg",
             "img/gsmrha.jpg"
         ]
+    },
+
+    {
+        name: "Kühlwasser",
+        text: [
+            ["Kühlwasser:", "SAP Nummer:"],
+            ["RS2 Links", ""],
+            ["RS2 Rechts", ""],
+            ["RS3 Links", ""],
+            ["RS3 Rechts", ""],
+            ["RS4 Links", ""],
+            ["RS4 Rechts", ""]
+            ],
+        zeit: [
+            ["", ""]
+            ],
+        bilder:
+            []
     }
 
 ]
