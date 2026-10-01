@@ -196,7 +196,7 @@ function showProperty(eigenschaft, backPage) {
 
         ${eigenschaft.bilder && eigenschaft.bilder.length > 0 ? `
         <h3 class="image-toggle" onclick="toggleImages()">
-            Protokolle & Checklisten
+            Bilder
             <span id="image-arrow">▼</span>
         </h3>
 
