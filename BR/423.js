@@ -34,7 +34,7 @@ const Info423 = [
             ["Deckel Anbau", "40 min"]
         ],
         bilder: [
-            
+            "img/Lagerdeckel_Mat.jpg"
         ]
     },
 
@@ -84,6 +84,32 @@ const Info423 = [
             ],
         bilder:
             []
+    },
+
+    {
+        name: "SAP Polster Fam. links",
+        text: [
+            ["siehe Bilder unten", ""]
+            ],
+        zeit: [
+            ["", ""]
+            ],
+        bilder:
+            ["img/Polster_Familienecke_links.jpg",
+            "img/Polster_Familienecke_links1.jpg"]
+    },
+
+    {
+        name: "SAP Polster Fam. rechts",
+        text: [
+            ["siehe Bilder unten", ""]
+            ],
+        zeit: [
+            ["", ""]
+            ],
+        bilder:
+            ["img/Polster_Familienecke_rechts.jpg",
+            "img/Polster_Familienecke_rechts1.jpg"]
     }
 
 ]
