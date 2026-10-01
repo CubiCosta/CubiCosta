@@ -6,11 +6,6 @@ const link = [
     {
         name_url: "Weisungen", 
         url: "https://bcm01cloud.intranet.deutschebahn.com/webcube/tasks/"
-    },
-    {
-        name_url: "IT-Leasing ab 01.10.",
-        url: "https://Google.com/"
     }
         
-
 ]
