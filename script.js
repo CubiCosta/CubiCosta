@@ -79,7 +79,20 @@ function showPage(page) {
             >
         `;
     }
-}
+
+    else if (page === "json") {
+        content.innerHTML = `
+            <div class="content-header">
+                <button onclick="showPage('start')">← Zurück</button>
+                <h1>JSON-Dateien</h1>
+            </div>
+
+            <div id="jsonButtons"></div>
+      `;
+
+        createJSONButtons();
+        }
+    }
 
 showPage("home");
 
@@ -211,4 +224,34 @@ function showProperty(eigenschaft, backPage) {
         </div>
     ` : ""}
     `;
+}
+
+async function createJSONButtons() {
+
+    const container = document.getElementById("jsonButtons");
+    container.innerHTML = "";
+
+    const antwort = await fetch("json/index.json");
+    const dateien = await antwort.json();
+
+    dateien.forEach(datei => {
+
+        const button = document.createElement("button");
+
+        button.textContent = datei;
+
+        button.onclick = function() {
+
+            const link = document.createElement("a");
+
+            link.href = "json/" + datei;
+            link.download = datei;
+
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+        };
+
+        container.appendChild(button);
+    });
 }
