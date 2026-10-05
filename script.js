@@ -226,6 +226,7 @@ function showProperty(eigenschaft, backPage) {
 }
 
 async function createJSONButtons() {
+    const container = document.getElementById("jsonButtons");
     const buttonAlle = document.createElement("button");
     buttonAlle.textContent = "Gesamte JSON herunterladen";
 
@@ -238,7 +239,7 @@ async function createJSONButtons() {
 
     container.appendChild(buttonAlle);
     
-    const container = document.getElementById("jsonButtons");
+    
     container.innerHTML = "";
 
     const antwort = await fetch("json/alle.json");
