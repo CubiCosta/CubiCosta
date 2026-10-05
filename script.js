@@ -277,5 +277,3 @@ async function createJSONButtons() {
         container.appendChild(button);
     });
 }
-
-
