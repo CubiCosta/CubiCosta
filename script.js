@@ -228,10 +228,8 @@ function showProperty(eigenschaft, backPage) {
 async function createJSONButtons() {
     const container = document.getElementById("jsonButtons");
 
-    // Container zuerst leeren
     container.innerHTML = "";
 
-    // Button für die gesamte JSON
     const buttonAlle = document.createElement("button");
     buttonAlle.textContent = "Gesamte JSON herunterladen";
 
@@ -244,11 +242,9 @@ async function createJSONButtons() {
 
     container.appendChild(buttonAlle);
 
-    // JSON laden
     const antwort = await fetch("json/alle.json");
     const daten = await antwort.json();
 
-    // Für jeden Eintrag einen eigenen Button erstellen
     Object.entries(daten).forEach(([dateiname, inhalt]) => {
 
         const button = document.createElement("button");
@@ -256,7 +252,13 @@ async function createJSONButtons() {
 
         button.onclick = function() {
 
-            const json = JSON.stringify(inhalt, null, 4);
+            const json = JSON.stringify(
+                {
+                    [dateiname]: inhalt
+                },
+                null,
+                4
+            );
 
             const blob = new Blob(
                 [json],
