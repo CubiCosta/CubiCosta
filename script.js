@@ -117,7 +117,7 @@ function createPropertyLinkButtons(properties) {
 
 function createPropertyButtons(properties, backPage) {
 
-    const container = document.getElementById("propertyButt ons");
+    const container = document.getElementById("propertyButtons");
 
     [...properties]
         .sort((a, b) => a.name.localeCompare(b.name, "de"))
