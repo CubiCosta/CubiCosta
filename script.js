@@ -3,18 +3,32 @@ function showPage(page) {
     const content = document.getElementById("content");
 
     if (page === "BR") {
-
         content.innerHTML = `
-            <p>test</p>
-            `;
-        
-        createPropertyButtons(Info420, "BR", "brButtons");
-        createPropertyButtons(Info423, "BR", "brButtons");
-        createPropertyButtons(Info424, "BR", "brButtons");
-        createPropertyButtons(Info1420, "BR", "brButtons");
+            <div class="content-header">
+                <h1>Baureihe</h1>
+            </div>
+
+            <div id="brButtons"></div>
+        `;
+
+        const container = document.getElementById("brButtons");
+
+        const brButtons = ["420", "423", "424", "1420"];
+
+        brButtons.forEach(nummer => {
+
+            const button = document.createElement("button");
+            button.textContent = nummer;
+
+            button.onclick = function() {
+                showPage(nummer);
+            };
+
+            container.appendChild(button);
+        });
     }
 
-    if (page === "420") {
+    else if (page === "420") {
 
         content.innerHTML = `
             <h1>Baureihe 420</h1>
