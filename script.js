@@ -4,9 +4,7 @@ function showPage(page) {
 
     if (page === "BR") {
         content.innerHTML = `
-            <div class="content-header">
-                <h1>Alle Baureihen</h1>
-            </div>
+            <h1>Alle Baureihen</h1>
 
             <div id="brButtons"></div>
         `;
@@ -106,9 +104,7 @@ function showPage(page) {
 
     else if (page === "json") {
         content.innerHTML = `
-            <div class="content-header">
-                <h1>Mat-ID Favoriten <strong>nicht fertig</strong></h1>
-            </div>
+            <h1>Mat-ID Favoriten <strong>nicht fertig</strong></h1>
 
             <div id="jsonButtons"></div>
       `;

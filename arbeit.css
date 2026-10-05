@@ -194,6 +194,15 @@ footer {
     box-sizing: border-box;
 }
 
+#jsonButtons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #soon {
     font-weight: bold;
     font-size: 25px;
