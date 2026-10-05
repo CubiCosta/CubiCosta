@@ -226,29 +226,35 @@ function showProperty(eigenschaft, backPage) {
 }
 
 async function createJSONButtons() {
-
     const container = document.getElementById("jsonButtons");
     container.innerHTML = "";
 
-    const antwort = await fetch("json/index.json");
-    const dateien = await antwort.json();
+    const antwort = await fetch("json/alle.json");
+    const daten = await antwort.json();
 
-    dateien.forEach(datei => {
+    Object.entries(daten).forEach(([dateiname, inhalt]) => {
 
         const button = document.createElement("button");
-
-        button.textContent = datei;
+        button.textContent = dateiname + ".json";
 
         button.onclick = function() {
 
+            const json = JSON.stringify(inhalt, null, 4);
+
+            const blob = new Blob(
+                [json],
+                { type: "application/json" }
+            );
+
+            const url = URL.createObjectURL(blob);
+
             const link = document.createElement("a");
+            link.href = url;
+            link.download = dateiname + ".json";
 
-            link.href = "json/" + datei;
-            link.download = datei;
-
-            document.body.appendChild(link);
             link.click();
-            link.remove();
+
+            URL.revokeObjectURL(url);
         };
 
         container.appendChild(button);
