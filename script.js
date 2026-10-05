@@ -83,7 +83,7 @@ function showPage(page) {
     else if (page === "json") {
         content.innerHTML = `
             <div class="content-header">
-                <h1>Mat-ID Favoriten</h1>
+                <h1>Mat-ID Favoriten <strong>nicht fertig</strong></h1>
             </div>
 
             <div id="jsonButtons"></div>
@@ -117,7 +117,7 @@ function createPropertyLinkButtons(properties) {
 
 function createPropertyButtons(properties, backPage) {
 
-    const container = document.getElementById("propertyButtons");
+    const container = document.getElementById("propertyButt ons");
 
     [...properties]
         .sort((a, b) => a.name.localeCompare(b.name, "de"))
