@@ -6,12 +6,12 @@ function showPage(page) {
 
         content.innerHTML = `
             <p>test</p>
-            `
-
-        <button onclick="showPage('420')">BR 420</button>
-        <button onclick="showPage('423')">BR 423</button>
-        <button onclick="showPage('424')">BR 424</button>
-        <button onclick="showPage('1420')">BR 1420</button>
+            `;
+        
+        createPropertyButtons(Info420, "BR", "brButtons");
+        createPropertyButtons(Info423, "BR", "brButtons");
+        createPropertyButtons(Info424, "BR", "brButtons");
+        createPropertyButtons(Info1420, "BR", "brButtons");
     }
 
     if (page === "420") {
@@ -105,6 +105,26 @@ function showPage(page) {
 
 showPage("home");
 
+
+function createPropertyButtons(properties, backPage, containerId = "propertyButtons") {
+
+    const container = document.getElementById(containerId);
+    container.innerHTML = "";
+
+    [...properties]
+        .sort((a, b) => a.name.localeCompare(b.name, "de"))
+        .forEach(eigenschaft => {
+
+            const button = document.createElement("button");
+            button.textContent = eigenschaft.name;
+
+            button.onclick = function() {
+                showProperty(eigenschaft, backPage);
+            };
+
+            container.appendChild(button);
+        });
+}
 
 function createPropertyLinkButtons(properties) {
 
