@@ -104,7 +104,7 @@ function showPage(page) {
 
     else if (page === "json") {
         content.innerHTML = `
-            <h1>Mat-ID Favoriten <strong>nicht fertig</strong></h1>
+            <h1>Mat-ID Favoriten</h1>
 
             <div id="jsonButtons"></div>
       `;
