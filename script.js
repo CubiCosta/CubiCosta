@@ -2,7 +2,17 @@ function showPage(page) {
 
     const content = document.getElementById("content");
 
+    if (page === "BR") {
 
+        content.innerHTML = `
+            <p>test</p>
+            `
+
+        <button onclick="showPage('420')">BR 420</button>
+        <button onclick="showPage('423')">BR 423</button>
+        <button onclick="showPage('424')">BR 424</button>
+        <button onclick="showPage('1420')">BR 1420</button>
+    }
 
     if (page === "420") {
 
@@ -231,7 +241,8 @@ async function createJSONButtons() {
     container.innerHTML = "";
 
     const buttonAlle = document.createElement("button");
-    buttonAlle.textContent = "Gesamte JSON herunterladen";
+    buttonAlle.textContent = "Komplette Liste herunterladen";
+    buttonAlle.style.marginBottom = "5px";
 
     buttonAlle.onclick = function() {
         const link = document.createElement("a");
