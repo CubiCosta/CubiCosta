@@ -203,6 +203,11 @@ footer {
     box-sizing: border-box;
 }
 
+#jsonButtons button:first-child {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+}
+
 #soon {
     font-weight: bold;
     font-size: 25px;
