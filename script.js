@@ -5,7 +5,7 @@ function showPage(page) {
     if (page === "BR") {
         content.innerHTML = `
             <div class="content-header">
-                <h1>Baureihe</h1>
+                <h1>Alle Baureihen</h1>
             </div>
 
             <div id="brButtons"></div>
