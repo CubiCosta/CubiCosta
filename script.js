@@ -83,7 +83,7 @@ function showPage(page) {
     else if (page === "json") {
         content.innerHTML = `
             <div class="content-header">
-                <h1>JSON-Dateien</h1>
+                <h1>Mat-ID Favoriten</h1>
             </div>
 
             <div id="jsonButtons"></div>
@@ -226,6 +226,18 @@ function showProperty(eigenschaft, backPage) {
 }
 
 async function createJSONButtons() {
+    const buttonAlle = document.createElement("button");
+    buttonAlle.textContent = "Gesamte JSON herunterladen";
+
+    buttonAlle.onclick = function() {
+        const link = document.createElement("a");
+        link.href = "json/alle.json";
+        link.download = "alle.json";
+        link.click();
+    };
+
+    container.appendChild(buttonAlle);
+    
     const container = document.getElementById("jsonButtons");
     container.innerHTML = "";
 
