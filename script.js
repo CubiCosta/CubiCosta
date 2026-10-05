@@ -83,7 +83,6 @@ function showPage(page) {
     else if (page === "json") {
         content.innerHTML = `
             <div class="content-header">
-                <button onclick="showPage('start')">← Zurück</button>
                 <h1>JSON-Dateien</h1>
             </div>
 
