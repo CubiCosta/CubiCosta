@@ -248,7 +248,7 @@ async function createJSONButtons() {
     Object.entries(daten).forEach(([dateiname, inhalt]) => {
 
         const button = document.createElement("button");
-        button.textContent = dateiname + ".json";
+        button.textContent = dateiname;
 
         button.onclick = function() {
 
