@@ -5,7 +5,6 @@ function showPage(page) {
     if (page === "BR") {
         content.innerHTML = `
             <h1>Alle Baureihen</h1>
-            <p>Bitte über das Arbeitsprofil vom mobilen Endgerät aus der arbeit die Datei Downloaden, damit ihr diese auch finden und importieren könnt</p>
             <div id="brButtons"></div>
         `;
 
@@ -105,7 +104,7 @@ function showPage(page) {
     else if (page === "json") {
         content.innerHTML = `
             <h1>Mat-ID Favoriten</h1>
-
+            <p>Bitte über das Arbeitsprofil vom mobilen Endgerät aus der arbeit die Datei Downloaden, damit ihr diese auch finden und importieren könnt</p>
             <div id="jsonButtons"></div>
       `;
 
