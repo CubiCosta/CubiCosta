@@ -56,6 +56,8 @@ function showPage(page) {
         content.innerHTML = `
             <h1>Baureihe 424</h1>
 
+            <p id="soon">Coming soon</p>
+
             <div id="propertyButtons"></div>
         `;
 
