@@ -273,7 +273,6 @@ async function createJSONButtons() {
 
     const buttonAlle = document.createElement("button");
     buttonAlle.textContent = "Komplette Liste herunterladen";
-    buttonAlle.style.marginBottom = "5px";
 
     buttonAlle.onclick = function() {
         const link = document.createElement("a");
