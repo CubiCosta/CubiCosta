@@ -4,14 +4,16 @@ const Info423 = [
         text: [
             ["Ablassschraube", "120Nm"],
             ["Einfüllschraube", "85Nm"],
-            ["Entlüfter", "30Nm"],
-            ["Ölmenge", "ca. 9,5L"],
-            ["Getriebeöl SAP", "738906"],
-            ["Getriebe Ölwechsel", "AA R4440.7023"]
+            ["Entlüfter", "30Nm"]
         ],
         zeit: [
             ["Ölwechsel pro Getriebe", "ca. 60 min"],
             ["mit Fasswechsel", "einmalig +30 min"]
+        ],
+        maß: [
+            ["Ölmenge", "ca. 9,5L"],
+            ["Getriebeöl SAP", "738906"],
+            ["Getriebe Ölwechsel", "AA R4440.7023"]
         ],
         bilder: [
             
@@ -33,6 +35,9 @@ const Info423 = [
             ["RS wartung", "20 min"],
             ["Deckel Anbau", "40 min"]
         ],
+        maß: [
+
+        ],
         bilder: [
             "img/Lagerdeckel_Mat.jpg"
         ]
@@ -41,13 +46,15 @@ const Info423 = [
     {
         name: "LP Wartung",
         text: [
-            ["Wartung Klein IS331", "AA R5000.7008"],
-            ["Wartung Groß IS332", "AA R5000.7008"]
         ],
         zeit: [
             ["Wartung Klein IS331", "208 min"],
             ["Wartung Groß IS332", "264 min"]
 
+        ],
+        maß: [
+            ["Wartung Klein IS331", "AA R5000.7008"],
+            ["Wartung Groß IS332", "AA R5000.7008"]
         ],
         bilder: [
             "img/LPklein.jpg", "img/LPgroß.jpg"
@@ -57,10 +64,12 @@ const Info423 = [
     {
         name: "GSM-R",
         text: [
-            ["GSM-R Klein IS 39N", "RM KI9100.0001.000"]
         ],
         zeit: [
             ["GSM-R Klein IS 39N", "87 min"]
+        ],
+        maß: [
+            ["GSM-R Klein IS 39N", "RM KI9100.0001.000"]
         ],
         bilder: [
             "img/GSMR.jpg",
@@ -71,6 +80,11 @@ const Info423 = [
     {
         name: "Kühlwasser",
         text: [
+            ],
+        zeit: [
+            ["", ""]
+            ],
+        maß: [
             ["Kühlwasser:", "SAP Nummer:"],
             ["RS2 Links", ""],
             ["RS2 Rechts", ""],
@@ -78,10 +92,7 @@ const Info423 = [
             ["RS3 Rechts", ""],
             ["RS4 Links", ""],
             ["RS4 Rechts", ""]
-            ],
-        zeit: [
-            ["", ""]
-            ],
+        ],
         bilder:
             []
     },
@@ -89,11 +100,13 @@ const Info423 = [
     {
         name: "SAP Polster Fam. links",
         text: [
-            ["siehe Bilder unten", ""]
             ],
         zeit: [
             ["", ""]
             ],
+        maß:[
+            ["siehe Bilder unten", ""]
+        ],
         bilder:
             ["img/Polster_Familienecke_links.jpg",
             "img/Polster_Familienecke_links1.jpg"]
@@ -102,11 +115,13 @@ const Info423 = [
     {
         name: "SAP Polster Fam. rechts",
         text: [
-            ["siehe Bilder unten", ""]
             ],
         zeit: [
             ["", ""]
             ],
+        maß: [
+            ["siehe Bilder unten", ""]
+        ],
         bilder:
             ["img/Polster_Familienecke_rechts.jpg",
             "img/Polster_Familienecke_rechts1.jpg"]

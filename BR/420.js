@@ -9,11 +9,13 @@ const Info420 = [
             ["Schleifring", "28+1Nm"],
             ["Schutzhaube", "35Nm"],
             ["Grundplatte Erdung", "54Nm"],
-            ["Polrad", "75+10Nm"],
-            ["SAP plus Drehmoment", "Kontrolle Bild Unten"]
+            ["Polrad", "75+10Nm"]
         ],
         zeit: [
             ["Lagerdeckel usw.", "unbekannt"]
+        ],
+        maß: [
+            ["SAP plus Drehmoment", "Siehe Bild Unten"]
         ],
         bilder: [
             "img/deckel420.jpg"
@@ -34,6 +36,7 @@ const Info420 = [
             ["AK Batterie","90min"],
             ["AK Video","5min"]
             ],
+        maß: [],
         bilder: []
     },
     
@@ -59,6 +62,7 @@ const Info420 = [
             ["AK Türen außen", "100min"],
             ["AK Video prüfen", "5min"]
               ],
+        maß: [],
         bilder: []
     },
     
@@ -84,6 +88,7 @@ const Info420 = [
             ["AK Türen außen", "200min"],
             ["AK Video prüfen", "5min"]
               ],
+        maß: [],
         bilder:[]
     },
     
@@ -109,6 +114,7 @@ const Info420 = [
             ["AK Türen außen", "180min"],
             ["AK Video prüfen", "5min"]
               ],
+        maß: [],
         bilder: []
     },
     
@@ -134,6 +140,7 @@ const Info420 = [
             ["AK Türen außen", "200min"],
             ["AK Video prüfen", "5min"]
               ],
+        maß: [],
         bilder: []
     }
     
