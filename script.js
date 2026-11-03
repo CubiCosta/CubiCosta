@@ -241,10 +241,16 @@ function showProperty(eigenschaft, backPage) {
             ${createRows(eigenschaft.zeit)}
         </div>
 
-        <h3>Beschreibung:</h3>
+        <h3>Drehmoment:</h3>
 
         <div class="property-table">
             ${createRows(eigenschaft.text)}
+        </div>
+
+        <h3>Maße usw.:</h3>
+
+        <div class="property-table">
+            ${createRows(eigenschaft.maß)}
         </div>
 
         ${eigenschaft.bilder && eigenschaft.bilder.length > 0 ? `
