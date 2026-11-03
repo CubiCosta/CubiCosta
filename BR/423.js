@@ -125,6 +125,52 @@ const Info423 = [
         bilder:
             ["img/Polster_Familienecke_rechts.jpg",
             "img/Polster_Familienecke_rechts1.jpg"]
-    }
+    },
+
+    {
+        name: "LZB-Klemme/Stecker",
+        text: [
+            ["Messpunkte am Stecker unter der LZB", " Sortiert nach Stecker und Pin"]
+        ],
+        zeit: [
+        ],
+        maß: [
+            ["X2:15", "Rückleitung 1"],
+            ["X2:16", "Fahrzeugmagnet 1 500 Hz"],
+            ["X2:17", "Fahrzeugmagnet 1 1000 Hz"],
+            ["X2:18", "Fahrzeugmagnet 1 2000 Hz"],
+            ["X2:19", "WIG 1 24 Volt"],
+            ["X2:20", "WIG 1 System 1"],
+            ["X2:21", "WIG 1 System 2"],
+            ["X2:22", "WIG 2 24 Volt"],
+            ["X2:23", "WIG 2 System 1"],
+            ["X2:24", "WIG 2 System 2"],
+            ["--------", "--------"],
+            ["X3:9", "Sendeantenne S2H"],
+            ["X3:11", "Sendeantenne S2V"],
+            ["X3:15", "Rückleitung 2"],
+            ["X3:16", "Fahrzeugmagnet 2 500 Hz"],
+            ["X3:17", "Fahrzeugmagnet 2 1000 Hz"],
+            ["X3:18", "Fahrzeugmagnet 2 2000 Hz"],
+            ["X3:21", "Sendeantenne S2H"],
+            ["X3:23", "Sendeantenne S2V"],
+            ["--------", "--------"],
+            ["X7:2", "Sendeantenne S1V"],
+            ["X7:9", "Empfangsantenne E1H"],
+            ["X7:11", "Empfangsantenne E1V"],
+            ["X7:14", "Sendeantenne S1V"],
+            ["X7:21", "Empfangsantenne E1H"],
+            ["X7:23", "Empfangsantenne E1V"],
+            ["--------", "--------"],
+            ["X8:2", "Sendeantenne S1H"],
+            ["X8:9", "Empfangsantenne E2H"],
+            ["X8:11", "Empfangsantenne E2V"],
+            ["X8:14", "Sendeantenne S1H"],
+            ["X8:21", "Empfangsantenne E2H"],
+            ["X8:23", "Empfangsantenne E2V"]
+        ],
+        bilder: [
+        ]
+    },
 
 ]
